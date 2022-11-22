@@ -4,6 +4,7 @@
   "keywords": ["php","catali", "otp", "cwos"],
   "homepage": "https://github.com/ikechukwuokalia/php-otp",
   "type": "library",
+  "license": "MIT",
   "authors": [
       {
           "name": "Ikechukwu Okalia",

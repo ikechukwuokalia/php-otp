@@ -1,0 +1,32 @@
+{
+  "name": "ikechukwuokalia/php-otp",
+  "description": "OTP addon for Catali Web OS",
+  "keywords": ["php","catali", "otp", "cwos"],
+  "homepage": "https://github.com/ikechukwuokalia/php-otp",
+  "type": "library",
+  "authors": [
+      {
+          "name": "Ikechukwu Okalia",
+          "email": "dev@ikechukwuokalia.com",
+          "homepage": "https://ikechukwuokalia.com",
+          "role": "developer"
+      }
+  ],
+  "require": {
+    "tymfrontiers-cdn/php-data" : ">=0.1@stable",
+    "tymfrontiers-cdn/php-mysql-database" : ">=0.1@stable",
+    "tymfrontiers-cdn/php-mysql-database-object" : ">=0.1@stable",
+    "tymfrontiers-cdn/php-pagination" : ">=0.1@stable",
+    "tymfrontiers-cdn/php-instance-error" : ">=0.1@stable",
+    "tymfrontiers-cdn/php-validator" : ">=0.1@stable",
+    "ikechukwuokalia/helper.cwapp" : ">=0.1@stable",
+    "ikechukwuokalia/php-mailer" : ">=0.1@stable"
+  },
+  "require-dev": {},
+  "autoload": {
+      "psr-4": {
+        "IO\\OTP\\": "src/"
+      },
+      "files" : []
+  }
+}

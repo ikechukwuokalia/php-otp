@@ -1,25 +1,24 @@
 <?php
-namespace Catali\OTP;
-use \Mailgun\Mailgun,
-    \TymFrontiers\Data,
-    \TymFrontiers\BetaTym,
-    \TymFrontiers\Generic,
-    \TymFrontiers\InstanceError,
-    \TymFrontiers\MySQLDatabase,
-    \TymFrontiers\MultiForm,
+namespace IO\OTP;
+use TymFrontiers\Data,
+    TymFrontiers\BetaTym,
+    TymFrontiers\Generic,
+    TymFrontiers\InstanceError,
+    TymFrontiers\MySQLDatabase,
+    TymFrontiers\MultiForm,
     TymFrontiers\Validator,
-    \Catali\Email,
-    \Catali\Mailer,
-    \Catali\Email\Recipient;
+    IO\Email,
+    IO\Mailer,
+    IO\Email\Recipient;
 
-use function \Catali\code_split,
-             \Catali\generate_code,
-             \Catali\get_constant,
-             \Catali\get_database,
-             \Catali\get_dbserver,
-             \Catali\get_dbuser,
-             \Catali\db_cred,
-             \Catali\setting_set_value;
+use function IO\code_split,
+             IO\generate_code,
+             IO\get_constant,
+             \get_database,
+             \get_dbserver,
+             \get_dbuser,
+             \db_cred,
+             IO\setting_set_value;
 
 class ByEmail {
     use \TymFrontiers\Helper\MySQLDatabaseObject,
